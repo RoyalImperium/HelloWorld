@@ -8,6 +8,32 @@
   color: #ffffff;
 }
 
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
 img {
   width: 100%;
   height: auto;
@@ -109,7 +135,7 @@ body {
 <body>
 
 <div class="header">
-  <h1>Hello World</h1>
+  <h1>Experimental Game Program</h1>
 </div>
 
 <div class="row">
@@ -119,21 +145,41 @@ body {
       <li>3d animation</li>
       <li>3d Modeling</li>
       <li>Photoshop</li>
+      <li>C#</li>
     </ul>
   </div>
 
   <div class="col-6 col-s-9">
+
     <h1>Objective</h1>
     <p>Publish game on steam.</p>
     
+    <h2>Register your intrest</h2>
+    <p>submit your name and email for more information</p>
+
+
+<form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSdGGiV9LbDz50t6O3Nv5DCfKXQ9Ett3-yqC0aWQESlI1ypOWQ/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+  Name:<br>
+  <input type="text" name="entry.1261876333" id="entry.1261876333"><br>
+  Email:<br>
+  <input type="text" name="entry.744710745" id="entry.744710745">
+<br>
+Message:<br>
+  <input type="text" name="entry.1530950368" id="entry.1530950368"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+
+
   </div>
-    
+
   <div class="col-3 col-s-12">
     <div class="aside">
       <h2>What?</h2>
-      <p>Multiplayer game</p>
+      <p>Create a game</p>
       <h2>Where?</h2>
-      <p>EveryWhere</p>
+      <p>Wellington</p>
       <h2>How?</h2>
       <p>People helping people</p>
     </div>
@@ -145,4 +191,12 @@ body {
 </div>
 
 </body>
+<script src="assets/js/jquery.min.js"></script>
+<script type="text/javascript">var submitted=false;</script>
+<script type="text/javascript">
+$('#gform').on('submit', function(e) {
+  $('#gform *').fadeOut(2000);
+  $('#gform').prepend('Your submission has been processed...');
+  });
+</script>
 </html>
