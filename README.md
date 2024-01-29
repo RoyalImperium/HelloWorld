@@ -11,3 +11,5 @@ Be good, kind and considerate.
 Family, Community, City.
 
 Safe and secure
+
+Good, bad, improve. Improvment protocol.
