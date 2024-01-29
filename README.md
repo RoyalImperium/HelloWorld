@@ -9,3 +9,5 @@ https://docs.google.com/spreadsheets/d/e/2PACX-1vRp99dr5drIrnoHqCUouwfJJndrSa13T
 Be good, kind and considerate.
 
 Family, Community, City.
+
+Safe and secure
